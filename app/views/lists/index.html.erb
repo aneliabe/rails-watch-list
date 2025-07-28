@@ -1,6 +1,6 @@
-<h1>Lists</h1>
-<% @lists.each do |list| %>
-  <li><%= link_to list.name, list_path(list) %></li>
-<%end%>
-
-<%= link_to 'New list', new_list_path %>
+    <p class='banner-txt'>My Lists</p>
+    <div id="list">
+      <% @lists.each do |list| %>
+      <li class='list-name list-unstyled'><%= link_to list.name, list_path(list), class:"text-decoration-none list-name" %></li>
+      <%end%>
+    </div>

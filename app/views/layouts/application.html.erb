@@ -11,6 +11,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class='container'>
+      <nav class="navbar navbar-light bg-light justify-content-between">
+        <%= image_tag 'logo.png', alt: "Le Wagon logo", width: 100%>
+        <div class='opt-navbar'>
+          <%= link_to 'New list', new_list_path, class:"text-decoration-none btn"%>
+          <%= link_to 'My Lists', lists_path, class:"text-decoration-none btn"%>
+        </div>
+      </nav>
+      <%= image_tag "banner.png", style: "width: 100%; object-fit: cover; opacity: 0.1" %>
+      <%= yield %>
+    </div>
   </body>
 </html>

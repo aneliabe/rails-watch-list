@@ -1,0 +1,13 @@
+.list-name {
+  font-size: 39px;
+  color: $gray;
+  display: inline-block;
+  padding: 20px;
+  &:hover {
+    color: $red;
+  }
+}
+
+#list {
+  text-align: center;
+}
