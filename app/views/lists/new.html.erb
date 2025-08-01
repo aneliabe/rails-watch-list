@@ -1,5 +1,6 @@
 <p class='banner-txt'>New List</p>
 <%= simple_form_for(@list) do |f| %>
   <%= f.input :name %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit "Create list", class:'btn btn-primary'%>
 <% end %>
